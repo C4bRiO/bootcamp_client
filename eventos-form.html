@@ -1,0 +1,18 @@
+<form role="form" ng-submit="crearEvento()">
+    <legend>Registro de Eventos</legend>
+
+    <div class="form-group">
+        <label for="">Nombre</label>
+        <input type="text" class="form-control" id="" placeholder="Nombre" ng-model="evento.nombre">  
+   
+        <label for="">Direccion</label>
+        <input type="text" class="form-control" id="" placeholder="Dirección" ng-model="evento.direccion">
+
+        <label for="">Descripcion</label>
+        <textarea type="text" class="form-control" id="" placeholder="Descripción" rows="3" ng-model="evento.descripcion"></textarea>    
+    </div>
+   
+    <button type="submit" class="btn btn-primary pull-right">Grabar</button>
+
+    <a class="btn btn-default" ui-sref="eventos" role="button">Cancelar</a>
+</form>  

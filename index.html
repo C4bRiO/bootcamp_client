@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body ng-app="gdgAdmin">
+        
+       
+
+        <div class="container">
+            <div class="nav navbar">
+                <a class="navbar-brand" ui-sref="home">GDG Admin</a>
+                <ul class="nav navbar-nav navbar-top-links navbar-right">
+                    <li>
+                        <a ui-sref="home">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="eventos">Eventos</a>
+                    </li>
+                </ul>
+            </div>
+            
+        
+            
+
+            <ui-view></ui-view>
+        </div>
+        
+                
+
+
+        <!-- Angular -->
+        <script src="bower_components/angular/angular.js"></script>
+        <!-- UI-Bootstrap -->
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script> 
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        
+        <script>
+                angular.module('gdgAdmin',['ui.bootstrap','ui.router']);
+        </script> 
+        
+        <script src="route.js"></script>
+        <script src="homeController.js"></script>
+        <script src="eventosController.js"></script>
+        <script src="eventosFormController.js"></script>
+        <script src="dataService.js"></script>
+        <!--<script>
+                angular.module('todoApp',[
+                    'ui.bootstrap'
+                    //references all the dependencies of your angularjs project
+                ]);
+
+                angular.controller('tareaController',tareaController);
+
+                tareaController.$inject = ['$scope'];
+                
+                function tareaController($scope){
+
+                }
+                
+                
+    
+            </script> -->
+    </body>
+</html>
