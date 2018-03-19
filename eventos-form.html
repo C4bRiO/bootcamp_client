@@ -1,4 +1,4 @@
-<form role="form" ng-submit="crearEvento()">
+<form role="form" ng-submit="crearEvento(evento) || actualizarEvento(evento)">
     <legend>Registro de Eventos</legend>
 
     <div class="form-group">
@@ -12,7 +12,7 @@
         <textarea type="text" class="form-control" id="" placeholder="Descripción" rows="3" ng-model="evento.descripcion"></textarea>    
     </div>
    
-    <button type="submit" class="btn btn-primary pull-right">Grabar</button>
+    <button type="submit" class="btn btn-primary pull-right">Guardar</button>
 
     <a class="btn btn-default" ui-sref="eventos" role="button">Cancelar</a>
 </form>  

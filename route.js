@@ -28,7 +28,7 @@
         .state('eventos-edit',{
             url: '/eventos-edit/:id', 
             templateUrl: 'eventos-form.html',
-            controller: 'eventosFormController'
+            controller: 'eventosFormEditController'
         })
     }
 
